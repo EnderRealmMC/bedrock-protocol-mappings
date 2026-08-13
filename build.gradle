@@ -1,0 +1,64 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'cn.enderrealm'
+version = providers.gradleProperty('libraryVersion').orElse('1.0.0').get()
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+    withJavadocJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = 'Bedrock Protocol Mappings'
+                description = 'Pure Java Bedrock client version and protocol mappings'
+                url = 'https://github.com/EnderRealmMC/bedrock-protocol-mappings'
+                licenses {
+                    license {
+                        name = 'The MIT License'
+                        url = 'https://opensource.org/license/mit'
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = 'GitHubPackages'
+            url = uri(providers.gradleProperty('githubPackagesUrl').orElse(
+                    'https://maven.pkg.github.com/EnderRealmMC/bedrock-protocol-mappings').get())
+            credentials {
+                username = providers.gradleProperty('gprUser').orElse(System.getenv('GITHUB_ACTOR') ?: '').get()
+                password = providers.gradleProperty('gprToken').orElse(System.getenv('GITHUB_TOKEN') ?: '').get()
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "versions": [
+    {"canonicalVersion":"1.21.0","aliases":["1.21"],"protocolVersion":685,"codecId":"v685","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.2","aliases":[],"protocolVersion":686,"codecId":"v686","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.20","aliases":[],"protocolVersion":712,"codecId":"v712","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.30","aliases":[],"protocolVersion":729,"codecId":"v729","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.40","aliases":["1.21.41"],"protocolVersion":748,"codecId":"v748","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.50","aliases":["1.21.51"],"protocolVersion":766,"codecId":"v766","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.60","aliases":["1.21.61","1.21.62"],"protocolVersion":776,"codecId":"v776","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.70","aliases":["1.21.71","1.21.72","1.21.73"],"protocolVersion":786,"codecId":"v786","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.80","aliases":["1.21.81","1.21.82"],"protocolVersion":800,"codecId":"v800","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.90","aliases":["1.21.91","1.21.92"],"protocolVersion":818,"codecId":"v818","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.93","aliases":[],"protocolVersion":819,"codecId":"v819","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.100","aliases":["1.21.101","1.21.102","1.21.103"],"protocolVersion":827,"codecId":"v827","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.111","aliases":[],"protocolVersion":844,"codecId":"v844","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.120","aliases":[],"protocolVersion":859,"codecId":"v859","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.124","aliases":["1.21.125"],"protocolVersion":860,"codecId":"v860","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.21.130","aliases":[],"protocolVersion":898,"codecId":"v898","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"26.0","aliases":["1.26.0"],"protocolVersion":924,"codecId":"v924","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"26.10","aliases":["1.26.10"],"protocolVersion":944,"codecId":"v944","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"26.20","aliases":["1.26.20","1.26.21","1.26.22","1.26.23"],"protocolVersion":975,"codecId":"v975","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"26.30","aliases":["1.26.30","1.26.31","1.26.32","1.26.33","1.26.34"],"protocolVersion":1001,"codecId":"v1001","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"26.40","aliases":["1.26.40"],"protocolVersion":2168,"codecId":"v2168","releaseChannel":"RELEASE","current":true}
+  ]
+}
