@@ -24,6 +24,18 @@ class BedrockProtocolMappingsTest {
     }
 
     /**
+     * Verifies that the registry spans the earliest and latest codecs exposed by Cloudburst Protocol.
+     */
+    @Test
+    void containsTheCompleteCodecRange() {
+        assertEquals(291, BedrockProtocolMappings.findProtocolVersion("1.7.0").orElseThrow());
+        assertEquals(2168, BedrockProtocolMappings.findProtocolVersion("26.40").orElseThrow());
+        assertEquals("v291", BedrockProtocolMappings.findByProtocolVersion(291).getFirst().codecId());
+        assertEquals("v2168", BedrockProtocolMappings.findByProtocolVersion(2168).getFirst().codecId());
+        assertEquals(62, BedrockProtocolMappings.getAllVersions().size());
+    }
+
+    /**
      * Verifies that unknown versions are not fuzzy-matched.
      */
     @Test

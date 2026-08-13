@@ -2,6 +2,8 @@
 
 Pure Java 21 library for bidirectional Bedrock client-version and protocol-version lookup.
 
+The bundled registry covers every Bedrock codec exposed by the current Cloudburst Protocol dependency, from `Bedrock_v291` (1.7.0) through `Bedrock_v2168` (26.40). Each record includes the canonical client version, registered release aliases, protocol number, codec identifier, release channel, and current-version marker.
+
 ## Coordinates
 
 ```text
@@ -19,6 +21,8 @@ Set<String> clientVersions = BedrockProtocolMappings.getClientVersions(1001);
 ```
 
 Queries trim surrounding whitespace and accept the registered aliases. Unknown versions return an empty optional; the library never guesses the nearest protocol.
+
+The registry intentionally stores one record per codec. When several client releases use the same wire protocol, those releases are listed as aliases of the same record, so reverse lookups retain every registered client version without duplicating codec metadata.
 
 ## Build and publish
 
