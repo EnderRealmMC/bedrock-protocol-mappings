@@ -61,6 +61,7 @@
     {"canonicalVersion":"26.10","aliases":["1.26.10"],"protocolVersion":944,"codecId":"v944","releaseChannel":"RELEASE","current":false},
     {"canonicalVersion":"26.20","aliases":["1.26.20","26.21","26.22","26.23","1.26.21","1.26.22","1.26.23"],"protocolVersion":975,"codecId":"v975","releaseChannel":"RELEASE","current":false},
     {"canonicalVersion":"26.30","aliases":["1.26.30","26.31","26.32","26.33","26.34","1.26.31","1.26.32","1.26.33","1.26.34"],"protocolVersion":1001,"codecId":"v1001","releaseChannel":"RELEASE","current":false},
-    {"canonicalVersion":"26.40","aliases":["1.26.40"],"protocolVersion":2168,"codecId":"v2168","releaseChannel":"RELEASE","current":true}
+    {"canonicalVersion":"26.40","aliases":["1.26.40","26.41","26.42","26.43","1.26.41","1.26.42","1.26.43"],"protocolVersion":2168,"codecId":"v2168","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"26.44","aliases":["1.26.44"],"protocolVersion":2168,"codecId":"v2168_hotfix4","releaseChannel":"RELEASE","current":true}
   ]
 }

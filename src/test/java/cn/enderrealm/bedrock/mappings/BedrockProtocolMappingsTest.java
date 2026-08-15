@@ -30,9 +30,13 @@ class BedrockProtocolMappingsTest {
     void containsTheCompleteCodecRange() {
         assertEquals(291, BedrockProtocolMappings.findProtocolVersion("1.7.0").orElseThrow());
         assertEquals(2168, BedrockProtocolMappings.findProtocolVersion("26.40").orElseThrow());
+        assertEquals(2168, BedrockProtocolMappings.findProtocolVersion("26.41").orElseThrow());
+        assertEquals(2168, BedrockProtocolMappings.findProtocolVersion("26.42").orElseThrow());
+        assertEquals(2168, BedrockProtocolMappings.findProtocolVersion("26.43").orElseThrow());
+        assertEquals("v2168_hotfix4", BedrockProtocolMappings.findByClientVersion("26.44").orElseThrow().codecId());
         assertEquals("v291", BedrockProtocolMappings.findByProtocolVersion(291).getFirst().codecId());
-        assertEquals("v2168", BedrockProtocolMappings.findByProtocolVersion(2168).getFirst().codecId());
-        assertEquals(62, BedrockProtocolMappings.getAllVersions().size());
+        assertEquals(2, BedrockProtocolMappings.findByProtocolVersion(2168).size());
+        assertEquals(63, BedrockProtocolMappings.getAllVersions().size());
     }
 
     /**

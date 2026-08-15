@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 public final class BedrockProtocolMappings {
     private static final String RESOURCE_NAME = "/bedrock-versions.json";
     private static final Pattern VERSION_PATTERN = Pattern.compile("(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*))*");
-    private static final Pattern CODEC_PATTERN = Pattern.compile("v[1-9]\\d*");
+    private static final Pattern CODEC_PATTERN = Pattern.compile("v[1-9]\\d*(?:_[a-z][a-z0-9]*)*");
     private static final Catalog CATALOG = loadCatalog();
 
     private BedrockProtocolMappings() {
