@@ -2,7 +2,7 @@
 
 Pure Java 21 library for bidirectional Bedrock client-version and protocol-version lookup.
 
-The bundled registry supports Bedrock codecs from `Bedrock_v291` (1.7.0) through `Bedrock_v2193` (26.50, latest with 26.51/26.52 alias).
+The bundled registry supports Bedrock codecs from `Bedrock_v291` (1.7.0) through `Bedrock_v2225` (26.60, latest).
 
 ## Coordinates
 

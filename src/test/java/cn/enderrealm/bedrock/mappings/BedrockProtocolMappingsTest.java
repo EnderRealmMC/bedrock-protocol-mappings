@@ -41,7 +41,7 @@ class BedrockProtocolMappingsTest {
         assertEquals("v291", BedrockProtocolMappings.findByProtocolVersion(291).getFirst().codecId());
         assertEquals(1, BedrockProtocolMappings.findByProtocolVersion(2168).size());
         assertEquals(1, BedrockProtocolMappings.findByProtocolVersion(2169).size());
-        assertEquals(64, BedrockProtocolMappings.getAllVersions().size());
+        assertEquals(65, BedrockProtocolMappings.getAllVersions().size());
     }
 
     /**
