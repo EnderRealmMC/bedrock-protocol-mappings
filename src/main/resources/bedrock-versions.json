@@ -1,5 +1,14 @@
 {
   "versions": [
+    {"canonicalVersion":"1.2.0","aliases":["1.2.1","1.2.2","1.2.3"],"protocolVersion":137,"codecId":"v137","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.2.5","aliases":[],"protocolVersion":141,"codecId":"v141","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.2.6","aliases":["1.2.6.1"],"protocolVersion":150,"codecId":"v150","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.2.7","aliases":["1.2.8","1.2.9"],"protocolVersion":160,"codecId":"v160","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.2.10","aliases":["1.2.11"],"protocolVersion":201,"codecId":"v201","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.2.13","aliases":["1.2.14","1.2.15","1.2.16"],"protocolVersion":223,"codecId":"v223","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.4.0","aliases":["1.4.1","1.4.2","1.4.3","1.4.4"],"protocolVersion":261,"codecId":"v261","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.5.0","aliases":["1.5.1","1.5.2","1.5.3"],"protocolVersion":274,"codecId":"v274","releaseChannel":"RELEASE","current":false},
+    {"canonicalVersion":"1.6.0","aliases":["1.6.1","1.6.2"],"protocolVersion":282,"codecId":"v282","releaseChannel":"RELEASE","current":false},
     {"canonicalVersion":"1.7.0","aliases":[],"protocolVersion":291,"codecId":"v291","releaseChannel":"RELEASE","current":false},
     {"canonicalVersion":"1.8.0","aliases":[],"protocolVersion":313,"codecId":"v313","releaseChannel":"RELEASE","current":false},
     {"canonicalVersion":"1.9.0","aliases":[],"protocolVersion":332,"codecId":"v332","releaseChannel":"RELEASE","current":false},
